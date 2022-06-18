@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Fylo data storage component</title>
+</head>
+<body class="page">
+  <main class="page__main">
+    <section class="storage">
+      <h1 class="visually-hidden">Fylo data storage</h1>
+      <div class="container container--header">
+        <a class="storage__link">
+          <img class="storage__logo" src="./images/logo.svg" alt="Fylo logo" width="135" height="40">
+        </a>
+        <ul class="controls">
+          <li class="controls__item">
+            <button class="controls__button controls__button--document" type="button">
+              <span class="visually-hidden">Create new document</span>
+            </button>
+          </li>
+          <li class="controls__item">
+            <button class="controls__button controls__button--folder" type="button">
+              <span class="visually-hidden">Create new folder</span>
+            </button>
+          </li>
+          <li class="controls__item">
+            <button class="controls__button controls__button--upload" type="button">
+              <span class="visually-hidden">Upload</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="container container--main">
+        <p class="storage__desc">You've used <span class="storage__size">815 Gb</span> of your storage</p>
+        <p class="storage__balance">
+          <span class="storage__balance-amount">185</span>
+          <span class="storage__balance-desc">Gb left</span>
+        </p>
+        <div class="progress">
+          <span class="progress__bar">
+            <span class="progress__value"></span>
+          </span>
+          <span class="progress__label storage__size">0 Gb</span>
+          <span class="progress__label storage__size">1000 Gb</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p class="page__copyright">Challenge by <a class="page__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="page__link" href="https://www.frontendmentor.io/profile/annaindistress"  target="_blank">annaindistress</a>.</p>
+  </footer>
+</body>
+</html>
