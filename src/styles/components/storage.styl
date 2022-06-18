@@ -1,0 +1,81 @@
+.storage
+    display grid
+    align-content center
+    gap 16px
+    width calc(100% - 48px)
+    max-width 920px
+    height 100%
+    margin 0 auto
+    padding-top 24px
+
+    &__link
+        display block
+        width 135px
+        margin-bottom 32px
+
+    &__logo
+        display block
+        width 100%
+        height auto
+
+    &__desc
+        margin 0 0 16px
+        text-align center
+
+    &__size
+        font-weight 700
+        text-transform uppercase
+
+    &__balance
+        position absolute
+        left calc(50% - 90px)
+        bottom -36px
+        display flex
+        flex-wrap nowrap
+        align-items center
+        width 180px
+        margin 0
+        padding 16px 24px
+        font-weight 700
+        color color-blue-100
+        background-color white
+        border-radius 10px
+        box-shadow shadow
+
+    &__balance-amount
+        margin-right 8px
+        font-size 40px
+        line-height 1
+
+    &__balance-desc
+        font-size 12px
+        line-height 1.25
+        letter-spacing 1px
+        text-transform uppercase
+        opacity .5
+
+@media (min-width: 992px)
+    .storage
+        grid-template-columns 350px 1fr
+        gap 30px
+
+        &__desc
+            text-align left
+
+        &__balance
+            top -42px
+            left auto
+            right 40px
+            bottom auto
+
+            &::after
+                content ''
+                position absolute
+                right -25px
+                bottom -16px
+                display block
+                width 0
+                height 0
+                border 25px solid transparent
+                border-bottom-color white
+                transform rotate(45deg)
